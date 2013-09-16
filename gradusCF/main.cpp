@@ -4,6 +4,7 @@
     #include <stdlib.h>
 #else
     #include <conio.h>
+    #include <clocale>
 #endif
 
 using namespace std;
@@ -18,7 +19,7 @@ int main()
     float c;//Температура по Цельсию
     cout<<"Введите температуру в градусах Цельсия:"<<endl;
     cin>>c;
-    cout<<"Это "<<32+0.8*c<<" град. по Фаренгейту"<<endl;
+    cout<<"Это "<<32+1.8*c<<" град. по Фаренгейту"<<endl;
 
     //}}Основная часть программы
     #ifdef _WIN32
