@@ -1,7 +1,8 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#ifdef _WIN32
+#ifndef _WIN32
+    #include <stdio.h>
+    #include <stdlib.h>
+#else
     #include <conio.h>
 #endif
 
