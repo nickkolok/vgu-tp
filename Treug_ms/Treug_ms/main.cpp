@@ -11,7 +11,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     //{{Основная часть программы
-
+	cout.setf(ios_base::fixed,ios_base::floatfield);
     cout<<"Введите стороны треугольника:"<<endl;
     double stor1,stor2,stor3;
     cin>>stor1>>stor2>>stor3;
