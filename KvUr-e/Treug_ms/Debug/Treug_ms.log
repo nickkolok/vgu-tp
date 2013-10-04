@@ -1,21 +1,17 @@
-﻿Построение начато 24.09.2013 7:54:58.
-     1>Проект "Z:\Авдеев_Николай_Николаевич\Treug_ms\Treug_ms\Treug_ms.vcxproj" в узле 2 (целевые объекты build).
+﻿Построение начато 01.10.2013 7:27:06.
+     1>Проект "Z:\Авдеев_Николай_Николаевич\vgu-tp-master\KvUr-e\Treug_ms\Treug_ms.vcxproj" в узле 2 (целевые объекты build).
      1>InitializeBuildStatus:
          Создание "Debug\Treug_ms.unsuccessfulbuild", так как было задано "AlwaysCreate".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
+         Для всех выходных данных обновления не требуется.
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Treug_ms.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.lib" /MACHINE:X86 Debug\main.obj
-         LINK : не найден или не выполнена сборка Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.exe при последней инкрементной компоновке; выполняется полная компоновка
-         Treug_ms.vcxproj -> Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.exe
-       Manifest:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Z:\Авдеев_Николай_Николаевич\Treug_ms\Debug\Treug_ms.exe;#1" /manifest Debug\Treug_ms.exe.intermediate.manifest
+         Для всех выходных данных обновления не требуется.
+         Treug_ms.vcxproj -> Z:\Авдеев_Николай_Николаевич\vgu-tp-master\KvUr-e\Debug\Treug_ms.exe
        FinalizeBuildStatus:
          Файл "Debug\Treug_ms.unsuccessfulbuild" удаляется.
          Обращение к "Debug\Treug_ms.lastbuildstate".
-     1>Построение проекта "Z:\Авдеев_Николай_Николаевич\Treug_ms\Treug_ms\Treug_ms.vcxproj" завершено (целевые объекты build).
+     1>Построение проекта "Z:\Авдеев_Николай_Николаевич\vgu-tp-master\KvUr-e\Treug_ms\Treug_ms.vcxproj" завершено (целевые объекты build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:04.46
+Затраченное время: 00:00:00.15
