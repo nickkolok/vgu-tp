@@ -12,106 +12,75 @@ int main()
     setlocale(LC_ALL, "Russian");
     //{{Основная часть программы
 
-    cout<<"Введите стороны треугольника:"<<endl;
-    double stor1,stor2,stor3;
-    cin>>stor1>>stor2>>stor3;
-	//double st1,st2,st3;
-    double st1,st2,st3;
-    //Упорядочиваем стороны. st1<=st2<=st3
-
-/*	double buf;
-    if(st1>st2){
-        buf=st1;
-        st1=st2;
-        st2=buf;
-    }
-    if(st1>st3){
-        buf=st1;
-        st1=st3;
-        st3=buf;
-    }
-    if(st2>st3){
-        buf=st2;
-        st2=st3;
-        st3=buf;
-    }
-*/
-	if(stor1<=stor2){
-		if(stor2<=stor3){
-			st1=stor1;
-			st2=stor2;
-			st3=stor3;
-		}else{//stor1<=stor2 stor2>stor3
-			st3=stor2;
-			if(stor1<=stor3){
-				st1=stor1;
-				st2=stor3;
-			}else{
-				st1=stor3;
-				st2=stor1;
-			}
-		}
-	}else{//stor1>stor2
-		if(stor3>=stor1){//stor3 - максимум, stor2 - минимум
-			st1=stor2;
-			st2=stor1;
-			st3=stor3;
-		}else{//stor1>stor2 stor1>stor3
-			st3=stor1;
-			if(stor2<=stor3){
-				st2=stor3;
-				st1=stor2;
-			}else{
-				st1=stor3;
-				st2=stor2;
-			}
-		}
-	}
-	
-	if(st1<0){
-		cout<<"Стороны должны быть неотрицательны."<<endl;
-	}
-	else{
-		//Проверяем на соответствие неравенству треугольника
-		if(st3>st1+st2){
-			cout<<"Треугольник с такими сторонами не может существовать."<<endl;
-		}
-		else
-			if(st3==st1+st2){
-				cout<<"Треугольник с такими сторонами вырождается в отрезок."<<endl;
-			}
-		else{
-			//Всё в порядке, это треугольник
-			//Определяем вид: прямоугольный, тупоугольный, остроугольный
-			if(pow(st3,2)==pow(st1,2)+pow(st2,2)){
-				cout<<"Треугольник прямоугольный. "<<st3<<" - гипотенуза, "
-				   <<st1<<" и "<<st2<<" - катеты."<<endl;
-			}
-			else
-				if(pow(st3,2)<pow(st1,2)+pow(st2,2)){
-					cout<<"Треугольник остроугольный."<<endl;
-				}
-				else{
-					cout<<"Треугольник тупогольный."<<endl;
-				}
-
-			//А не равносторонний ли?
-			if(st1==st3){//Стороны упорядочены, st2 можно не трогать
-				cout<<"Треугольник равносторонний."<<endl;
-			}
-			else
-				if(st1==st2 || st2==st3){
-					//Ну может быть, хотя бы равнобедренный?
-					cout<<"Треугольник равнобедренный."<<endl;
-				}
-
-			//Теперь считаем площадь.
-			double p=(st1+st2+st3)/2;//Полупериметр
-			double s=sqrt(p*(p-st1)*(p-st2)*(p-st3));
-			cout<<"Площадь треугольника равна "<<s<<"."<<endl;
-		}
-	}
-    //}}Основная часть программы
+    cout<<"Вас привествует программа для определения сотового оператора "<<endl
+		<<"по коду телефонного номера:"<<endl
+		<<"Введите код. (Вторая, третья и четвёртая цифры номера, "<<endl
+		<<"записанные без пробелов и знаков препинания. Например, для номера"<<endl
+		<<" 89123456789 код равен 912"<<endl
+		<<"Часто код записывают в скобочках: 8 (912) 345-67-89 )"<<endl;
+	int kod;
+	cin>>kod;
+	switch(kod){
+		case 902:
+		case 905:
+		case 910:
+		case 911:
+		case 912:
+		case 913:
+		case 914:
+		case 915:
+		case 916:
+		case 917:
+		case 918:
+		case 919:
+			cout<<"Телефонный номер принадлежит оператору \"MTC\".";
+			break;
+		case 903:
+		case 906:
+		case 960:
+		case 961:
+		case 962:
+		case 963:
+		case 964:
+		case 965:
+		case 966:
+		case 967:
+		case 968:
+		case 969:
+			cout<<"Телефонный номер принадлежит оператору \"Билaйн\".";
+			break;
+		case 904:
+		case 908:
+		case 950:
+		case 951:
+		case 952:
+		case 953:
+		case 954:
+		case 955:
+		case 956:
+		case 957:
+		case 958:
+		case 959:
+			cout<<"Телефонный номер принадлежит оператору \"TEЛE2\".";
+			break;
+		case 920:
+		case 921:
+		case 922:
+		case 923:
+		case 924:
+		case 925:
+		case 926:
+		case 927:
+		case 928:
+		case 929:
+			cout<<"Телефонный номер принадлежит оператору \"Meгaфoн\".";
+			break;
+		default:
+			cout<<"He удалось определить оператора, которому принадлежит номер.";
+			break;
+	};
+	//}}Основная часть программы
+	cout<<endl;
 	#ifdef _WIN32
 		_getch();
 	#endif
